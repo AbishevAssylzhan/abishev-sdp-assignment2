@@ -4,7 +4,6 @@ public class EsportsMouse implements Mouse {
     private final int dpi;
 
     public EsportsMouse(int dpi) {
-        // Clean Code principle: Validated construction
         if (dpi < 400 || dpi > 32000) {
             throw new IllegalArgumentException("Invalid DPI value for an esports mouse.");
         }
